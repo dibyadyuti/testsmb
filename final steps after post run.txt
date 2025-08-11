@@ -1,0 +1,5 @@
+docker build -t glue-smb-builder .
+
+docker create --name my_smb_container glue-smb-builder
+docker cp my_smb_container:/tmp/smbprotocol_wheels.zip "C:\Users\Diby\allianz\docker-glue-smb"
+docker rm my_smb_container

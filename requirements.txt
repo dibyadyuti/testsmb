@@ -1,0 +1,4 @@
+# Pinning smbprotocol and a known-compatible cryptography version.
+# The version 3.4.8 is a good starting point for Glue 4.0.
+smbprotocol
+cryptography==3.4.8

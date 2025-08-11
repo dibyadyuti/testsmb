@@ -1,0 +1,12 @@
+import sys
+import subprocess
+
+subprocess.check_call([sys.executable, "-m", "pip", "install",
+                       "cryptography==3.4.8", "smbprotocol==1.10.1", "pyspnego==0.5.2"])
+
+
+import smbprotocol
+from smbprotocol.connection import Connection
+from smbprotocol.session import Session
+from smbprotocol.tree import TreeConnect
+from smbprotocol.open import Open
